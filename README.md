@@ -43,3 +43,28 @@ All pages should be responsive.
 
 Please refer to the design provided -
 https://xd.adobe.com/view/98867d1a-e800-41b3-92f3-7b26c5470f74-cdd5/
+
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
