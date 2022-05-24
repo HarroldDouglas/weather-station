@@ -1,11 +1,10 @@
 <template>
     <div class="card">
-        <div class="card-header">
-            <h3>{{city.name}}</h3>
-            <h6>{{city.country}}</h6>
-        </div>
         <div class="card-body">
-            <h1>{{city.weather}}</h1>
+            <h3 class="my-0 text-primary" style="font-size: 15px;"><strong>{{city.name}}</strong></h3>
+            <h6 class="my-0" style="font-size: 12px;">{{city.country}}</h6>
+            <h2 class="mt-3" style="font-size: 26px;"><strong>{{city.weather}}  <sup>°</sup>C</strong></h2>
+            <button class="btn btn-sm btn-primary w-100 mt-3">View city</button>
         </div>
     </div>
 </template>

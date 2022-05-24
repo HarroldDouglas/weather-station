@@ -93,3 +93,20 @@ p, a {
         height: 30px;
     }
 }
+.btn-primary{
+    background: #0A545F;
+    color: #FFF;
+    border-color: #0A545F;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background: #0b6d79;
+    color: #FFF;
+}
+.btn-sm{
+    font-size: 12px;
+    padding: 5px 20px;
+}
+.text-primary{
+    color: #0A545F !important;
+}

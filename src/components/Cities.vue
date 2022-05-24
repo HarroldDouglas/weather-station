@@ -1,6 +1,8 @@
 <template>
-<div class="col-md-2" v-bind:key="city.name" v-for="city in cities">
-    <city-card-component :city="city"/>
+<div class="row">
+    <div class="col-md-2" v-bind:key="city.name" v-for="city in cities">
+        <city-card-component :city="city"/>
+    </div>
 </div>
 </template>
 

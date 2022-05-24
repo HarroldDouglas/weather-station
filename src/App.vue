@@ -9,25 +9,12 @@ export default {
   name: 'App',
   data () {
     return {
-      cities: []
+
     }
   },
   components: {
     LayoutComponent,
   },
-  watch: {
-    cities: {
-      handler() {
-        localStorage.setItem('cities',JSON.stringify(this.cities))
-      },
-      deep: true
-    }
-  },
-  mounted() {
-    if (localStorage.getItem("cities")){
-      this.cities = JSON.parse(localStorage.getItem("cities"))
-    }
-  }
 }
 </script>
 
