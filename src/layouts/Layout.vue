@@ -11,9 +11,9 @@
 </template>
 
 <script>
-    import FooterComponent from "./Footer";
-    import HeaderComponent from "./Header";
-    import HomePageComponent from "./HomePage";
+    import FooterComponent from "../components/Footer";
+    import HeaderComponent from "../components/Header";
+    import HomePageComponent from "../pages/HomePage";
 
     export default {
         name: "layout-component",
