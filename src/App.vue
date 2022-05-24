@@ -1,19 +1,17 @@
 <template>
-  <layout-component/>
+  <router-view />
 </template>
 
 <script>
-import LayoutComponent from "./layouts/Layout";
 
 export default {
   name: 'App',
   data () {
     return {
-
+      cities: []
     }
   },
   components: {
-    LayoutComponent,
   },
 }
 </script>

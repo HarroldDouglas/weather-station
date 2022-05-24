@@ -3,7 +3,7 @@
         <header-component/>
         <div class="row">
             <div class="col-md-12">
-                <home-page-component/>
+                <slot/>
             </div>
         </div>
         <footer-component/>
@@ -13,12 +13,10 @@
 <script>
     import FooterComponent from "../components/Footer";
     import HeaderComponent from "../components/Header";
-    import HomePageComponent from "../pages/HomePage";
 
     export default {
         name: "layout-component",
         components: {
-            HomePageComponent,
             HeaderComponent,
             FooterComponent,
         }
