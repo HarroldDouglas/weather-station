@@ -28,6 +28,7 @@
 </template>
 
 <script>
+    // This component provide the footer for all pages
     export default {
         name: "weather-card-component",
         props: ["city", "data"],

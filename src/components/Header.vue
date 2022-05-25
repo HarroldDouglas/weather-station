@@ -9,6 +9,7 @@
 </template>
 
 <script>
+    // This component provide the header for all pages
     export default {
         name: "header-component"
     }

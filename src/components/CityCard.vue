@@ -10,6 +10,8 @@
 </template>
 
 <script>
+    // This component is use to displays city weather
+    // The city information are provided by the parent
     export default {
         name: "city-card-component",
         props: ["city"],
@@ -20,6 +22,7 @@
         },
         methods: {
             // Creating showCity function
+            // to show weather details for the current city
             showCity() {
                 this.$router.push({ name: 'details', params: { name: this.city.name } })
             },

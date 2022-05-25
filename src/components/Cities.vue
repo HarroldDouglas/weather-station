@@ -7,6 +7,7 @@
 </template>
 
 <script>
+    // this component is used to display all the city cards
     import CityCardComponent from "./CityCard";
     export default {
         name: "cities-component",

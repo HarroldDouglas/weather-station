@@ -5,7 +5,7 @@
 </template>
 
 <script>
-
+    // This component provide the footer for all pages
     export default {
         name: "footer-component"
     }

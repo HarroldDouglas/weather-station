@@ -14,6 +14,7 @@
 </template>
 
 <script>
+    // The home page
     import AddCitiesComponent from "../components/AddCity";
     import CitiesComponent from "../components/Cities";
     import LayoutComponent from "../layouts/Layout";
@@ -23,21 +24,23 @@
         components: {CitiesComponent, AddCitiesComponent, LayoutComponent},
         data() {
             return {
-                showCities: true,
-                cities: [],
+                showCities: true, // show cities when add new city
+                cities: [], // store all cities
             }
         },
         // Creating methods
         methods: {
             // Creating addCity function
+            // Add city in the cities array
             addCity(newCity) {
                 this.cities = [...this.cities, newCity]
-                this.showCities = true
+                this.showCities = true // we can display cities
             },
         },
         watch: {
             cities: {
                 handler() {
+                    // we store cities to the local database
                     localStorage.setItem('cities', JSON.stringify(this.cities))
                 },
                 deep: true
@@ -45,6 +48,7 @@
         },
         mounted() {
             if (localStorage.getItem("cities")) {
+                // we load stored cities from local database
                 this.cities = JSON.parse(localStorage.getItem("cities"))
             }
         }
